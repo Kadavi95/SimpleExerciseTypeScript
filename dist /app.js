@@ -234,12 +234,12 @@ class ProjectInput extends Component {
             value: +enteredPeople,
             required: true,
             min: 1,
-            max: 5
+            max: 10
         };
         if (!validate(titleValidatable) ||
             !validate(descriptionValidatable) ||
             !validate(peopleValidatable)) {
-            alert('Invalid input, please try again!');
+            alert(`Invalid input, please try again! Only 10 person is allowed to be added to the project. The Description part can't be shorter than 10 marks`);
             return;
         }
         else {
